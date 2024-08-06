@@ -3,12 +3,29 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
          http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <!-- coordenadas del proyecto
-        dns invertida
-    -->
+    <!-- coordenadas del proyecto dns invertida    -->
     <groupId>maven.example</groupId>
     <artifactId>maven-quick-start</artifactId>
     <version>1.0</version>
+
+    <!-- coordenadas de DEPENDENCIAS del proyecto    -->
+    <dependencies>
+        <!-- Your dependencies go here, like this! -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
+            <!-- definir usarlo para test -->
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.15.0</version>
+        </dependency>
+    </dependencies>
+
 
     <!-- incluyendo pluggins-->
 <build>
